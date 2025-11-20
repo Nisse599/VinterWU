@@ -1,0 +1,54 @@
+body{
+    background-color:#3498db;
+}
+
+
+#container {
+    background-color: #ff6b00;
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 20% 40% 20% 1fr   ;
+    grid-template-areas: 
+    "hd hd"
+    "na mn"
+    "nv mn"
+    "ft ft"
+;
+    height: 100vh;
+    gap: 10px;
+
+}
+#rubrik1{
+display: flex;
+background-color: blue;
+}
+
+nav{
+    grid-area: nv;
+    display: flex;
+    background-color:black
+}
+
+#nav2{
+    grid-area: na;
+    background-color: bisque;
+}
+
+header{
+    grid-area: hd;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+
+main{
+    grid-area: mn;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+
+footer{
+    grid-area: ft;
+    background-color: rgb(0, 0, 0);
+}
